@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>Seu PC tanka? - Catálogo</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/customStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/requisicao.js"></script>
+</head>
+
+<body>
+
+    <script src="./js/header.js"></script>
+    <script>getJogos()</script>
+
+    <div class="row mb-3 jogosContainer">
+        <main class="col-3" id="main-filtros" style="margin-right: 40px;">
+            <div class="filtros">
+                <div class="filtros-generos">
+                    <h4 id="generos-title">GÊNEROS DE JOGOS</h4>
+                </div>
+                <div class="generos mt-3">
+                    <label class="checkbox">Ação
+                        <input type="checkbox" id="Ação">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">RPG
+                        <input type="checkbox" id="RPG">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">Estratégia
+                        <input type="checkbox" id="Estrategia">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">Aventura
+                        <input type="checkbox" id="Aventura">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">Simulação
+                        <input type="checkbox" id="Simulação">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">Esporte
+                        <input type="checkbox" id="Esportes">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">Corrida
+                        <input type="checkbox" id="Corrida">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">FPS
+                        <input type="checkbox" id="FPS">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">Multijogador
+                        <input type="checkbox" id="Multiplayer">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">Indie
+                        <input type="checkbox" id="Indie">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">Luta
+                        <input type="checkbox" id="Luta">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="generos mt-4">
+                    <label class="checkbox">Terror
+                        <input type="checkbox" id="Terror">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div onclick="clickFiltrar()" class="botao-filtrar">
+                    <input type="button" value="Filtrar" class="botao-filtrar">
+                </div>
+            </div>
+        </main>
+        <div id="jogos" class="jogos col-9">
+            <br>
+            <div id="gamestable" class="row">
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <script src="./js/footer.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+
+</html>

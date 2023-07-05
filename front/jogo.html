@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>Seu PC tanka? - Jogo</title>
+
+
+    <!-- css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
+    <link rel="stylesheet" href="./css/customStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/requisicao.js"></script>
+
+</head>
+
+<body>
+    <script>reqSteam()</script>
+    <script>
+        $(document).ready(function () {
+            if (!sessionStorage.getItem('Logado')) {
+                document.getElementById("reqSeus").style.display="none"
+            }
+        });
+    </script>
+    <script src="./js/header.js"></script>
+    <main>
+        <div class="row justify-content-start">
+            <div class="descricao col-8 pb-5 pt-5">
+                <h3 id="titleJogo"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="descricao col-6">
+                <p id="descriJogo">
+
+                </p>
+            </div>
+            <div class="col-4 col-xxl-5">
+                <img id="imgJogo" class="gameImg" src="" alt="">
+            </div>
+        </div>
+    </main>
+    <div style="width: 100%;">
+        <div id="line"></div>
+    </div>
+    <main>
+        <div class="row justify-content-center">
+            <video id="videoJogo" class="trailer col-6 mb-5" src="" controls></video>
+        </div>
+    </main>
+    <main>
+        <div class="row">
+            <p class="h4">Requisitos de Sistema</p>
+            <div id="line-req"></div>
+            <div class="row">
+                <div id="minimum" class="col">
+
+                </div>
+                <div id="recommended" class="col">
+
+                </div>
+                <div id="reqSeus" class="col">
+                    <strong class="requisitos">Seus:</strong><br>
+                    <ul class="bb_ul">
+                        <li><strong>Processador:</strong> <span id="spanProcessador"></span>
+                        </li>
+                        <li><strong>Memória:</strong> <span id="spanRam"></span> <br>
+                        </li>
+                        <li><strong>Placa de Video:</strong> <span id="spanGpu"></span><br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-2 mb-5">
+            <div id="SeuPcTanka" class="cardTanka col-4">
+                <span>Seu PC Tanka este Jogo</span>
+            </div>
+            <div id="SeuPcNTanka" class="cardNTanka col-4">
+                <span>Seu PC Não Tanka este Jogo</span>
+            </div>
+        </div>
+
+        <!-- <div id="seuPcNTanka" class="row justify-content-center mt-2 mb-5">
+            <div class="cardNTanka col-4">
+                <span>Seu PC Não Tanka este Jogo</span>
+            </div>
+        </div> -->
+
+        <!-- <script src="./js/documentCarousel.js"></script> -->
+        <div id="carouselAp" class="carousel mb-5 mt-4" style="margin: 0 100px;">
+            <div class="imgC"><a id="bt1"></a><img id="1" src=""></div>
+            <div class="imgC"><a id="bt2"></a><img id="2" src=""></div>
+            <div class="imgC"><a id="bt3"></a><img id="3" src=""></div>
+            <div class="imgC"><a id="bt4"></a><img id="4" src=""></div>
+            <div class="imgC"><a id="bt5"></a><img id="5" src=""></div>
+            <div class="imgC"><a id="bt6"></a><img id="6" src=""></div>
+        </div>
+    </main>
+    <!-- <script src="./js/documentCarousel.js"></script> -->
+    <script src="./js/footer.js"></script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <script type="text/javascript" src="./js/carousel.js"></script>
+</body>
+
+</html>
